@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+ background-color: rgba(255, 255, 255, 0.418);   
+ display: flex;
+ justify-content:space-between;
+ padding: 1rem 5rem;
+ position: fixed;
+ width: 100%;
+ box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.10);
+}
+nav img {
+    max-width: 150px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+nav li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 0.15s;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+   
+}
+nav li a:hover {
+    color: black;
+    font-weight: 600;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.hero-section {
+    margin-top: 100px;
+    grid-column: 3 span;  
+    display: grid;    
+}
+.hero-section img {
+    width: 100%;
+    height: 840px;
+}
+.about-section {
+    display: grid;
+    grid-column: 3 span;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-section img {
+    width: 1000px;
+}
+
+.about-section p {  
+    margin-right: 80px;
+    grid-column: 3; 
+    font-size: 20px;   
+    text-align: justify;
+}
+
+.movies-banner  {
+    display: grid;
+    grid-column: 3 span;
+    justify-content: end;
+    margin-bottom: 100px;
+}
+.movies-section{
+    display: grid;
+    grid-column: 3 span;
+    grid-template-columns: repeat(3, 1fr); /* Menentukan 3 kolom dengan lebar yang sama */
+    gap: 4rem;   
+}
+.movies-section .card-movie{
+    margin: 0 80px;
+}
+.movies-section img {
+    border-radius: 30px;
+}
+
+.card-text ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin:15px 0 0 0;   
+}
+.card-text li {
+    list-style: none; 
+       
+}
+.card-text span {
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.movie {
+    border: 2px solid rgb(249, 176, 28);
+    border-radius: 5px;
+    padding: 3px 5px 0px 20px;
+    background-image: url(img/play.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    text-align: end;
+    background-position: 2px;
+    font-size: 15px;
+}
+.card-text p {
+    padding-top: 10px;
+}
+.movie:hover {
+    background-color:  rgb(249, 176, 28);
+}
+.rating-movie {
+    display: flex;
+    background-image: url(img/star.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 55px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.card-movie img:hover {
+    opacity: 0.5;
+    z-index: 99;
+}
+
+
+/*
+nav {
+    min-height: 100px;
+    line-height: 90px;
+    background-color: #ffffff;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0 100px;
+}
+nav li {
+    font-style: 205px;
+}
+nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 0 16.5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: rgb(135, 135, 135);
+}
+nav a img {
+}
+nav a:hover {
+    color:  rgb(5, 5, 5);
+}
+.hero-img {
+    background-image: url(img/ghibi\ hero\ banner.png);
+    height: 50%;
+}
