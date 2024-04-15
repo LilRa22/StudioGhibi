@@ -44,11 +44,12 @@ main {
 .hero-section {
     margin-top: 100px;
     grid-column: 3 span;  
-    display: grid;    
+    display: grid;  
 }
 .hero-section img {
     width: 100%;
-    height: 840px;
+    max-height: 859px;
+    
 }
 .about-section {
     display: grid;
@@ -66,6 +67,8 @@ main {
     grid-column: 3; 
     font-size: 20px;   
     text-align: justify;
+    margin-top: 70px;
+    max-width: 600px;
 }
 
 .movies-banner  {
@@ -73,6 +76,7 @@ main {
     grid-column: 3 span;
     justify-content: end;
     margin-bottom: 100px;
+    min-width: 100%;
 }
 .movies-section{
     display: grid;
@@ -125,46 +129,76 @@ main {
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: center;
-    padding-left: 55px;
-    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-bottom: 7px;
     text-decoration: none;
 }
-.card-movie img:hover {
-    opacity: 0.5;
+.card-movie img:is(:hover, :focus-within) { transform: scale(1.05); 
+    opacity: 0.7;
     z-index: 99;
 }
+.fest-section{
+    display: grid;
+    grid-column: 3 span;
+    margin-top: 100px;
+    background-color:#ffd04e;
+    margin-bottom: 100px;
+    padding: 10px 10px 10px 10px;
+}
+.fest-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
 
-
-/*
-nav {
-    min-height: 100px;
-    line-height: 90px;
-    background-color: #ffffff;
 }
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    margin: 0 100px;
-}
-nav li {
-    font-style: 205px;
-}
-nav a {
-    display: inline-block;
+.fest-text{
+    grid-column:2 span;
+    grid-row: 2 span;
+    justify-self: center;
     text-align: center;
-    padding: 0 16.5px;
-    text-decoration: none;
+}
+.fest-text img {
+    min-width: 400px;
+    min-height: 250px;
+
+}
+
+.fest-card img {
+    grid-column: 8;
+    max-width: 250px;
+    max-height: 170px;
+    padding:10px 10px 10px 10px;
+    border-radius: 20px;
+}
+.footer-section {
+    margin:0 80px 0 80px;
+}
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(87, 87, 87);
+    padding: 0;
+}
+.footer-section li {
+    width: 350px;
+    margin-top: 20px;
     text-transform: capitalize;
-    font-size: 18px;
-    color: rgb(135, 135, 135);
+    text-align: justify;
+    margin-right: 40px;
 }
-nav a img {
+
+.footer-section li a {
+    text-decoration: none;
+    line-height: 40px;
+    color: rgb(87, 87, 87);
 }
-nav a:hover {
-    color:  rgb(5, 5, 5);
+.footer-title li{
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
 }
-.hero-img {
-    background-image: url(img/ghibi\ hero\ banner.png);
-    height: 50%;
+.footer-section li img {
+    max-width: 500px;
+
 }
