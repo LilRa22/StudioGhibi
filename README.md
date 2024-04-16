@@ -1,1 +1,2 @@
 # StudioGhibi
+Readme coming soon!!!
